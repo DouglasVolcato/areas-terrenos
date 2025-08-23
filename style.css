@@ -661,20 +661,14 @@ body {
     }
 
     .contact-content h2 {
-        margin-bottom: 3px;
+        margin-bottom: 7px;
     }
 
     .contact-content p {
-        margin-bottom: 3px;
+        margin-bottom: 7px;
     }
 
     .footer {
         padding: 10px;
-    }
-}
-
-@media (max-height: 720px) {
-    .contact-btn {
-        display: none;
     }
 }
