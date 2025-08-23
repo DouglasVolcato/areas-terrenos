@@ -146,7 +146,7 @@ body {
     justify-content: center;
     justify-content: space-around;
     background: #f8f9fa;
-    height: 102vh;
+    height: 100vh;
     margin: auto;
     width: 100vw;
     display: flex;
@@ -220,13 +220,13 @@ body {
 }
 
 .cta-content {
-    margin: 0;
+    margin: auto;
 }
 
 .cta-title {
-    font-size: 3rem;
+    font-size: 2.2rem;
     font-weight: 700;
-    margin-bottom: 2rem;
+    margin: auto;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -267,7 +267,7 @@ body {
     padding: 6rem 0;
     background: white;
     height: 100vh;
-    display: flex; 
+    display: flex;
     flex-wrap: wrap;
 }
 
@@ -471,20 +471,6 @@ body {
     font-size: 0.9rem;
 }
 
-#creci {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 13px;
-    padding-bottom: 96px;
-}
-
-.creci {
-    font-weight: 600;
-    color: #25d366;
-}
-
 /* WhatsApp Float Button */
 .whatsapp-float {
     position: fixed;
@@ -622,7 +608,7 @@ body {
     }
 
     .hero-title {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .hero-subtitle {
@@ -662,5 +648,33 @@ body {
     .contact-btn {
         padding: 0.8rem 2rem;
         font-size: 1rem;
+    }
+}
+
+@media (max-height: 820px) {
+    .services {
+        height: 90vh;
+    }
+
+    .contact {
+        height: 95vh;
+    }
+
+    .contact-content h2 {
+        margin-bottom: 3px;
+    }
+
+    .contact-content p {
+        margin-bottom: 3px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+}
+
+@media (max-height: 720px) {
+    .contact-btn {
+        display: none;
     }
 }
