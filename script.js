@@ -46,26 +46,6 @@ document.addEventListener('DOMContentLoaded', function () {
     //     lastScrollTop = scrollTop;
     // });
 
-    // Smooth scroll para links de navegação
-    const navLinks = document.querySelectorAll('.nav a[href^="#"]');
-    navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const targetId = link.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
-
-            if (targetSection) {
-                const headerHeight = header.offsetHeight;
-                const targetPosition = targetSection.offsetTop - headerHeight;
-
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-
     // Mobile menu toggle
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
     const nav = document.querySelector('.nav');
@@ -86,6 +66,29 @@ document.addEventListener('DOMContentLoaded', function () {
             heroBackground.style.transform = `translateY(${rate}px)`;
         });
     }
+
+    // Smooth scroll para links de navegação
+    const navLinks = document.querySelectorAll('.nav a[href^="#"]');
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+
+            if (targetSection) {
+                const headerHeight = header.offsetHeight;
+                const targetPosition = targetSection.offsetTop - headerHeight;
+
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+
+            nav.classList.remove('active');
+            mobileMenuToggle.classList.remove('active');
+        });
+    });
 
     // Animação de digitação para o título principal
     const heroTitle = document.querySelector('.hero-title');
