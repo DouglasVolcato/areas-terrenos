@@ -273,74 +273,6 @@ body {
     margin-top: 1rem;
 }
 
-/* About Section */
-.about {
-    padding: 6rem 0;
-    background: white;
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.about-content h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #1d70a6;
-    margin-bottom: 3rem;
-}
-
-@media (max-width: 790px) {
-    .about-content h2 {
-        font-size: 1.5rem;
-    }
-}
-
-.about-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 3rem;
-    margin-top: 3rem;
-}
-
-.about-item {
-    text-align: center;
-    padding: 2rem;
-    transform: translateX(-50px);
-    opacity: 0;
-    transition: all 0.6s ease;
-}
-
-.about-item.aos-animate {
-    transform: translateX(0);
-    opacity: 1;
-}
-
-.about-icon {
-    width: 70px;
-    height: 70px;
-    background: #25d366;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 1.5rem;
-    font-size: 1.8rem;
-    color: white;
-}
-
-.about-item h3 {
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: #1d70a6;
-    margin-bottom: 1rem;
-}
-
-.about-item p {
-    color: #7f8c8d;
-    line-height: 1.6;
-}
-
 /* Contact Section */
 .contact {
     background: #f8f9fa;
@@ -568,11 +500,6 @@ body {
     .services-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
-    }
-
-    .about-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
     }
 
     .footer-content {
