@@ -530,6 +530,10 @@ body {
 
 /* Responsividade */
 @media (max-width: 790px) {
+    #contact-title {
+        display: none;
+    }
+
     .nav {
         display: none;
     }
@@ -578,6 +582,7 @@ body {
     .contact-info {
         flex-direction: column;
         gap: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 
     .whatsapp-float {
@@ -658,6 +663,13 @@ body {
 
     .contact {
         height: 95vh;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 4px;
+        margin-top: 10px;
+        margin-bottom: 4px;
     }
 
     .contact-content h2 {
