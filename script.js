@@ -71,6 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('.nav a[href^="#"]');
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
+            deactivateNavbar();
             e.preventDefault();
             const targetId = link.getAttribute('href');
             const targetSection = document.querySelector(targetId);
@@ -84,11 +85,19 @@ document.addEventListener('DOMContentLoaded', function () {
                     behavior: 'smooth'
                 });
             }
-
-            nav.classList.remove('active');
-            mobileMenuToggle.classList.remove('active');
         });
     });
+
+    function deactivateNavbar() {
+        const navbar = document.querySelector('.nav');
+        if (navbar) {
+            navbar.classList.remove('active');
+        }
+        const toggle = document.querySelector('.mobile-menu-toggle');
+        if (toggle) {
+            toggle.classList.remove('active');
+        }
+    }
 
     // Animação de digitação para o título principal
     const heroTitle = document.querySelector('.hero-title');
