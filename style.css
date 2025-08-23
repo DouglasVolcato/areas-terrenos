@@ -47,8 +47,14 @@ body {
     color: #1d70a6;
 }
 
-.logo span {
+.logo h1 span {
     color: #25d366;
+    font-size: 40px;
+}
+
+.logo h1 span i {
+    color: #25d366;
+    font-size: 40px;
 }
 
 .nav ul {
@@ -143,17 +149,18 @@ body {
     margin: auto;
     width: 100vw;
     display: flex;
+    padding: 10px;
 }
 
 @media (max-width: 1000px) {
     .services {
-        height: 800px;
+        height: fit-content;
     }
 }
 
 @media (max-width: 790px) {
     .services {
-        height: 1000px;
+        height: fit-content;
     }
 }
 
@@ -226,7 +233,7 @@ body {
 
 @media (max-width: 790px) {
     .cta {
-        height: 500px;
+        height: 400px;
     }
 }
 
@@ -299,7 +306,7 @@ body {
 
 @media (max-width: 790px) {
     .about-content h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -360,7 +367,8 @@ body {
 
 @media (max-width: 790px) {
     .contact {
-        height: 900px
+        height: fit-content;
+        padding: 1rem 0;
     }
 }
 
@@ -369,6 +377,10 @@ body {
     font-weight: 700;
     color: #1d70a6;
     margin-bottom: 1rem;
+}
+
+.contact-content h2 {
+    font-size: 1.5rem;
 }
 
 .contact-content p {
@@ -622,6 +634,18 @@ body {
 }
 
 @media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    .logo h1 span {
+        font-size: 1.2rem;
+    }
+
+    .logo h1 span i {
+        font-size: 1.2rem;
+    }
+
     .container {
         padding: 0 15px;
     }
@@ -635,16 +659,28 @@ body {
     }
 
     .cta-title {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
     }
 
     .service-card {
-        padding: 2rem 1.5rem;
+        padding: 5px;
+        height: 130px;
+    }
+
+    .service-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .service-icon {
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        margin: 0.5rem auto 0.5rem auto;
     }
 
     .whatsapp-btn {
-        padding: 1rem 2rem;
-        font-size: 1.1rem;
+        padding: 1rem 1.1rem;
+        font-size: 1rem;
     }
 
     .contact-btn {
