@@ -121,7 +121,8 @@ body {
     position: relative;
     z-index: 2;
     text-align: left;
-    max-width: 800px;
+    max-width: 98vw;
+    width: 1000px;
     animation: fadeInUp 1s ease-out;
 }
 
