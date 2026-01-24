@@ -17,6 +17,23 @@
     gtag('event', 'conversion', {'send_to': 'AW-380896150/ZaaSCLar_usbEJaH0LUB'});
     </script>
 
+    <!-- Event snippet for Contato whatsapp site conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+    function gtag_report_conversion(url) {
+        var callback = function () {
+            if (typeof(url) != 'undefined') {
+                window.location = url;
+            }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-380896150/_7-6CMum8esbEJaH0LUB',
+            'event_callback': callback
+        });
+        return false;
+    }
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -267,7 +284,7 @@
                 <p class="contact-subtitle">Não tome nenhuma decisão antes de uma segunda opinião profissional. Fale diretamente comigo no WhatsApp.</p>
                 
                 <div class="contact-actions">
-                    <a href="https://wa.me/5551999813592?text=Olá,%20gostaria%20de%20avaliar%20o%20potencial%20do%20meu%20terreno." target="_blank" class="btn btn-whatsapp pulse-effect">
+                    <a href="#" target="_blank" class="btn btn-whatsapp pulse-effect" onclick="gtag_report_conversion(`https://wa.me/5551999813592?text=Olá,%20acessei%20o%20site%20e%20quero%20saber%20mais.`);">
                         <i class="fab fa-whatsapp"></i> Iniciar Conversa Estratégica
                     </a>
                 </div>
@@ -311,7 +328,7 @@
     </footer>
 
     <!-- Floating WhatsApp -->
-    <a href="https://wa.me/5551999813592?text=Olá,%20acessei%20o%20site%20e%20quero%20saber%20mais." class="whatsapp-float" target="_blank" title="Falar no WhatsApp">
+    <a href="#" class="whatsapp-float" target="_blank" title="Falar no WhatsApp" onclick="gtag_report_conversion(`https://wa.me/5551999813592?text=Olá,%20acessei%20o%20site%20e%20quero%20saber%20mais.`);">
         <i class="fab fa-whatsapp"></i>
     </a>
 
